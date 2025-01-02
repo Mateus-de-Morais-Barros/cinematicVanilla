@@ -89,6 +89,10 @@ nav > div > button :hover {
     scale: 1.05;
 }
 
+nav div a {
+    margin-inline: 1rem;
+}
+
 .nowPlaying {
     display: flex;
     flex-direction: column;
@@ -107,9 +111,10 @@ nav > div > button :hover {
     width: 10rem;
 }
 
-.card img {
+.card > img {
     width: 10rem;
     border-radius: 4px;
+    box-shadow: 2px 2px 30px #2c358a56;
 }
 
 .card p {
