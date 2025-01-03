@@ -29,12 +29,8 @@ header {
     height: 50svh;
     position: relative;
     background-image: url("../../img/BannerImg.png");
-}
-
-.bannerImg {
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .headerTagContainer {
@@ -89,15 +85,25 @@ nav > div > button :hover {
     scale: 1.05;
 }
 
-nav div a {
+.navLinks a {
     margin-inline: 1rem;
+}
+
+.navLinks, .navButtons {
+    display: flex;
+    align-items: center;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
 }
 
 .nowPlaying {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 20%;
+    padding-left: 10%;
 }
 
 .cardCarrousel {
